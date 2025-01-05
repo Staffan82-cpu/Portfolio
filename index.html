@@ -1,18 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { color: #4CAF50; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi! I'm Ritues Staffan. Here are some of my projects:</p>
-    <ul>
-        <li><a href="https://github.com/yourusername/project1">Project 1</a></li>
-        <li><a href="https://github.com/yourusername/project2">Project 2</a></li>
-    </ul>
+    <div class="vs-code">
+        <!-- Title Bar -->
+        <div class="title-bar">
+            <div class="title-bar-left">
+                <span class="title">VS Code Interface - Portfolio</span>
+            </div>
+            <div class="title-bar-right">
+                <button class="close-btn">X</button>
+                <button class="minimize-btn">_</button>
+                <button class="maximize-btn">□</button>
+            </div>
+        </div>
+        
+        <!-- Main Area -->
+        <div class="main-area">
+            <!-- Sidebar / Activity Bar -->
+            <div class="side-bar">
+                <ul>
+                    <li class="icon" id="explorer">
+                        <i class="fas fa-folder"></i>
+                        <span>Explorer</span>
+                        <ul class="dropdown">
+                            <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="aboutme.html"><i class="fas fa-user"></i> About Me</a></li>
+                            <li><a href="github.html"><i class="fab fa-github"></i> GitHub</a></li>
+                            <li><a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a></li>
+                            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Me</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Editor Area -->
+            <div class="editor">
+                <h1>Welcome to my Portfolio</h1>
+                <p>This is a basic mockup of the VS Code interface for my portfolio website.</p>
+                <div class="content">
+                    <h3>Projects</h3>
+                    <p>Check out my projects below:</p>
+                    <!-- Add your project links or portfolio content here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

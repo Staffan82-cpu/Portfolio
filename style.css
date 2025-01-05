@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+}
+
+.vs-code {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.title-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.title-bar-left {
+    font-weight: bold;
+}
+
+.title-bar-right button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.title-bar-right button:hover {
+    background-color: #555;
+}
+
+.main-area {
+    display: flex;
+    flex: 1;
+}
+
+.side-bar {
+    background-color: #2d2d2d;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.side-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-bar li.icon {
+    padding: 10px;
+    text-align: center;
+    width: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+.side-bar li.icon:hover {
+    background-color: #444;
+}
+
+.side-bar li.icon span {
+    font-size: 12px;
+    display: block;
+    color: #dcdcdc;
+}
+
+.side-bar li.icon i {
+    font-size: 20px;
+    color: #dcdcdc;
+}
+
+.side-bar .dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.side-bar .dropdown li {
+    margin: 5px 0;
+}
+
+.side-bar .dropdown li a {
+    color: #dcdcdc;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar .dropdown li a i {
+    margin-right: 10px;
+}
+
+.side-bar li.icon.active .dropdown {
+    display: block;
+}
+
+.editor {
+    flex: 1;
+    padding: 20px;
+    background-color: #252526;
+}
+
+.editor h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.editor .content {
+    margin-top: 20px;
+}
+
+.editor .content h3 {
+    font-size: 20px;
+    color: #ff9b00;
+}
+
+.editor .content p {
+    font-size: 16px;
+}
